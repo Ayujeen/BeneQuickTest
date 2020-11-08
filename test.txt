@@ -1,0 +1,5 @@
+101396885   ALVA                     CAROLA                   4829 JAUREGUI BLVD            CORCORAN            IL  55357                          
+727344064   FASSETT                  DAINA                    8614 LIPSEY PKWY              LEWISTON            MN  55952                          
+93804840    KEARSE                   RICKI                    6236 NICKLES BLVD             ANDOVER             OK  55304 
+727344064   FASSETT                  DAINA                    8614 LIPSEY PKWY              LEWISTON            IL  55952                          
+101396885   ALVA                     CAROLA                   4829 JAUREGUI BLVD            CORCORAN            OK  55357

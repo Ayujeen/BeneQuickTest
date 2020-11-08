@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BeneQuick Web Test</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+
+    <script src="script/testApp.js"></script>
+
+    <style>
+        body {
+            font-size: .6rem;
+        }
+    </style>
+
+</head>
+
+
+<body ng-app="bqTestModule" ng-cloak>
+<div class="container" ng-controller="FetchController">
+
+    <h3>Member Data File Viewer App</h3>
+		
+    <!-- Display your states in a drop down here -->
+    <br />
+
+    <div>
+
+            <h4> Members from state: <!-- State name here --> 
+			<select ng-model="selectedState" ng-options="x for (x,y) in states_name"ng-change="stateChanged()"></select>
+			</h4>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                </tr>
+                </thead>
+
+                <tbody ng-repeat="x in statedata">
+                    <!-- Populate member details per state here -->
+                    <tr>
+                    <th>{{x.id}}</th>
+                    <th>{{x.address}}</th>
+                    <th>{{x.city}}</th>
+                    <th>{{x.firstName}}</th>
+                    <th>{{x.lastName}}</th>
+                    <th>{{x.state}}</th>
+                    <th>{{x.zip}}</th>
+                </tr>
+                </tbody>
+            </table>
+
+    </div>
+	<h4>Total Entries : {{entrycount}}</h4>
+
+
+</div>
+
+
+</body>
+</html>
